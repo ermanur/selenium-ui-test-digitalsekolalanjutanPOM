@@ -1,10 +1,10 @@
 {
-  "name": "selenium-ui-test-digitalsekolalanjutan",
+  "name": "digitalsekolapom",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/saucedemo-mocha.js",
-    "test:all" : "mocha"
+    "test": "mocha test/*.js --timeout 10000",
+    "test:parallel": "mocha test/*.js --parallel --jobs 3 --timeout 10000"
   },
   "author": "",
   "license": "ISC",
